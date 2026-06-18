@@ -47,6 +47,9 @@ export default function Login() {
           />
 
           <button
+          onClick={()  => { 
+          window.location.href = "/buyer";
+          }}
             style={{
               width: "100%",
               padding: "12px",

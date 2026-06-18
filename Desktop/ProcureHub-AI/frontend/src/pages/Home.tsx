@@ -38,6 +38,11 @@ export default function Home() {
           Transforming Procurement With Artificial Intelligence,
           Reverse Auctions & Smart Vendor Management.
         </p>
+        <a href="/buyer-dashboard">
+  <button>
+    Get Started
+  </button>
+</a>
 
         <div style={{ marginTop: "30px" }}>
           <button

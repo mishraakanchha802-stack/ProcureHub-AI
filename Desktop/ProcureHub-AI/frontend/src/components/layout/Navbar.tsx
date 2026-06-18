@@ -1,4 +1,6 @@
+import { useState } from "react";
 export default function Navbar() {
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <nav
       style={{
@@ -39,14 +41,15 @@ export default function Navbar() {
         </a>
 
         <button
-          style={{
-            padding: "8px 15px",
-            borderRadius: "8px",
-            cursor: "pointer",
-          }}
-        >
-          🌙
-        </button>
+  onClick={() => setDarkMode(!darkMode)}
+  style={{
+    padding: "8px 15px",
+    borderRadius: "8px",
+    cursor: "pointer",
+  }}
+>
+  {darkMode ? "☀️" : "🌙"}
+</button>
 
         <a href="/login">
           <button
